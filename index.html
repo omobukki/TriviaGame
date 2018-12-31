@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TriviaGamet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Loto" rel="stylesheet">
+    <script src="assets/javascript/app.js"></script>
+    <script type="text/javascript"></script>
+</head>
+
+
+<body>
+    <h1>Trivia form multiple choice!</h1>
+
+    <form id="quiz" name="quiz">
+
+        <p>Which water sport is the official state individual sport of Hawaii?</p>
+        <input id="textbox" type="text" name="question 1"><br>
+
+        </br>
+
+        <p>The leaning tower of Pisa is located in which city?</p>
+        <input type="radio" id="mc" name="question2" value="Pisa, Italy"> Pisa,Italy<br>
+        <input type="radio" id="mc" name="question2" value="London ,UK"> London, UK<br>
+        <input type="radio" id="mc" name="question2" value="South Africa"> South Africa<br>
+        <input type="radio" id="mc" name="question2" value="South Korea"> South Korea<br>
+        </br>
+
+        <p>In what country were the Winter Olympics first held?</p>
+
+         <input type="radio" id="mc" name="question3" value="Australia"> Australia<br>
+         <input type="radio" id="mc" name="question3" value="United States"> United States<br>
+         <input type="radio" id="mc" name="question3" value="France"> France<br> 
+         <input type="radio" id="mc" name="question3" value="Mexico"> Mexico<br>
+   
+        </br>
+
+        <input id="button" type ="button" value = "I'm done!" onclick= "check();">
+        
+        <input id="button" type ="button" value = "Timer!" onclick= "check();"
+
+    </form>
+
+    <div id ="after_submit">
+
+        
+        <p id="message"></p>
+        <p id ="number_correct"> Game's Over</p>
+
+    </div>
+
+
+</body>
+
+</html>
