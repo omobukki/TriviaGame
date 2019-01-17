@@ -8,7 +8,7 @@
     <title>TriviaGamet</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Loto" rel="stylesheet">
+    <link type='text/css' href='http://fonts.googleapis.com/css?family=Lato:400,700' />
     <script src="assets/javascript/app.js"></script>
     <script type="text/javascript"></script>
 </head>
@@ -20,7 +20,7 @@
     <form id="quiz" name="quiz">
 
         <p>Which water sport is the official state individual sport of Hawaii?</p>
-        <input id="textbox" type="text" name="question 1"><br>
+        <input id="textbox" type="text" name="question1"><br>
 
         </br>
 
@@ -33,26 +33,23 @@
 
         <p>In what country were the Winter Olympics first held?</p>
 
-         <input type="radio" id="mc" name="question3" value="Australia"> Australia<br>
-         <input type="radio" id="mc" name="question3" value="United States"> United States<br>
-         <input type="radio" id="mc" name="question3" value="France"> France<br> 
-         <input type="radio" id="mc" name="question3" value="Mexico"> Mexico<br>
-   
+        <input type="radio" id="mc" name="question3" value="Australia"> Australia<br>
+        <input type="radio" id="mc" name="question3" value="United States"> United States<br>
+        <input type="radio" id="mc" name="question3" value="France"> France<br>
+        <input type="radio" id="mc" name="question3" value="Mexico"> Mexico<br>
+
         </br>
 
-        <input id="button" type ="button" value = "I'm done!" onclick= "check();">
-        
-        <input id="button" type ="button" value = "Timer!" onclick= "check();"
+        <input id="button" type="button" value="I'm done!" onclick="check();">
 
-    </form>
-
-    <div id ="after_submit">
-
-        
+        <input id="button" type="button" value="Timer!" onclick="check();" 
+    </form> 
+    
+    <div id="after_submit">
         <p id="message"></p>
-        <p id ="number_correct"> Game's Over</p>
+        <p id="number_correct"> Game's Over</p>
 
-    </div>
+        </div>
 
 
 </body>
