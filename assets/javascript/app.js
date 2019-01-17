@@ -2,6 +2,7 @@
 function check() {
 
 
+
     //var firstCountry = document.quiz.question1.value;
     var firstCountry = document.getElementById("textbox").value;
     var secondCountry = document.quiz.question2.value;
@@ -9,15 +10,15 @@ function check() {
     var wins = 0;
     var losses = 0;
     // over here run the if condition and else condition.
-    // if user guess the answer correct i t will increment their chanc
 
+    // if user guess answer correct run this and increment their chance
     if (firstCountry == "Surfing") {
         wins++;
     }
-    //Else it will alert user you have incorrect answer 
+    //Else alert user you have incorrect answer 
     else {
         losses++;
-        alert("You have losses incorrect answers");
+        alert("You have losses, incorrect answers");
     }
 
     if (secondCountry == "Pisa, Italy") {
@@ -47,7 +48,7 @@ function check() {
         scoreRange = 2;
     }
 
-    if (wins> 0 && wins < 3) {
+    if (wins > 0 && wins < 3) {
         scoreRange = 2;
     }
 
@@ -58,6 +59,14 @@ function check() {
     document.getElementById("after_submit").style.visibility = "visible";
 
     document.getElementById("message").innerHTML = message["scorerange"];
-    document.getElementById("number_correct").innerHTML = "You got " + correct + "correct.";
+    document.getElementById("number_correct").innerHTML = "You got " + wins + "wins.";
 
+
+    var timer = setInterval(myTimer,1000);
+    function myTimer() {
+        var d = new Date();
+  document.getElementById("timer").innerHTML = d.toLocaleTimeString();
 }
+
+    }
+
